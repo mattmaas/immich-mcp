@@ -1,0 +1,32 @@
+{
+  "name": "mcp-immich",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for managing Immich photo library with bidirectional image support",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "author": "Matt Maas",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "immich",
+    "photo-management",
+    "self-hosted"
+  ]
+}
